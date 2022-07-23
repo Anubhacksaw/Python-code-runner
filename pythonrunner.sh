@@ -32,7 +32,8 @@ do
 echo " "
 echo "--------------------------"
 echo "1. I want to edit my code"
-echo "2.Exit"
+echo "2.Run again"
+echo "3.Exit"
 echo "--------------------------"
 echo " "
 read c
@@ -40,7 +41,11 @@ case $c in
 	1 )
 		sf
 		;;
-	2 )
+	2)
+		echo "___Your Output file___"
+		python3 $a.py
+		;;
+	3 )
 		echo "\033[42;5m _____Exiting_____\033[0m"
 		echo "\033[44;5m@Anubhab\033[0m"
 		echo "\033[33mhttps://github.com/Anubhab-ai\033[0m"
